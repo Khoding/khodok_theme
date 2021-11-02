@@ -70,18 +70,23 @@
 		</header>
 
 		<div id="content" class="site-content flex-grow">
+			<?php khodok() ?>
 
 			<!-- Start introduction -->
 			<?php if (is_front_page()) : ?>
 				<div class="container mx-auto my-12 border-b pb-12">
 					<h1 class="font-bold text-lg text-secondary uppercase">Khodok's Theme</h1>
-					<h2 class="text-3xl lg:text-7xl tracking-tight font-extrabold my-4">This is a test WordPress theme by <a href="https://www.khodok.xyz/" class="text-primary">Khodok</a>.</h2>
+					<h2 class="text-3xl lg:text-7xl tracking-tight font-extrabold my-4">This is a test WordPress theme by <?php khodok() ?>.</h2>
 					<p class="max-w-screen-lg text-gray-400 text-lg font-medium mb-10">Based on <a href="https://github.com/jeffreyvr/tailpress">TailPress</a>.</p>
 					<a href="https://github.com/Khoding/khodok_theme" class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
 						on Github</a>
 				</div>
 			<?php endif; ?>
 			<!-- End introduction -->
+
+			<?php get_template_part('template-parts/a_template'); ?>
+
+			<?php lol("fr") ?>
 
 			<?php do_action('khodok_theme_content_start'); ?>
 

@@ -112,3 +112,17 @@ function khodok_theme_nav_menu_add_submenu_class($classes, $args, $depth)
 }
 
 add_filter('nav_menu_submenu_css_class', 'khodok_theme_nav_menu_add_submenu_class', 10, 3);
+
+function lol($language = "en")
+{
+	if ($language == "en") {
+		print("lol");
+	} else if ($language == "fr") {
+		print("mdr");
+	}
+}
+
+function khodok()
+{
+	echo ('<a href="https://www.khodok.xyz/" class="text-primary">Khodok</a>');
+}
